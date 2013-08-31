@@ -18,6 +18,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from i9500 device
 $(call inherit-product, device/samsung/i9500/i9500.mk)
 
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ja3gxx TARGET_DEVICE=ja3g BUILD_FINGERPRINT="samsung/ja3gxx/ja3g:4.2.2/JDQ39/I9500XXUAMDK:user/release-keys" PRIVATE_BUILD_DESC="ja3gxx-user 4.2.2 JDQ39 I9500XXUAMDK release-keys"
+
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_i9500
 PRODUCT_DEVICE := i9500
